@@ -1,0 +1,46 @@
+📖 Day 18 – CASE & Set Operators
+
+## Topics Covered
+
+- CASE
+- UNION
+- UNION ALL
+- INTERSECT
+- EXCEPT
+
+### CASE Example
+
+```sql
+SELECT name,
+CASE
+WHEN salary>50000 THEN 'High'
+ELSE 'Low'
+END AS Salary_Level
+FROM Employee;
+```
+
+### UNION
+
+Combines unique rows.
+
+```sql
+SELECT city FROM Customers
+UNION
+SELECT city FROM Suppliers;
+```
+
+### UNION ALL
+
+Includes duplicates.
+
+### INTERSECT
+
+Returns common rows.
+
+### EXCEPT
+
+Returns rows from first query only.
+
+### Practiced
+
+Solved 20 mixed questions.

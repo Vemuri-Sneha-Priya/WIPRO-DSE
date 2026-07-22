@@ -1,0 +1,23 @@
+📖 Day 17 – Subqueries
+
+## Topics Covered
+
+- Single Row Subquery
+- Multiple Row Subquery
+- Correlated Subquery
+
+Example
+
+```sql
+SELECT *
+FROM Employee
+WHERE salary >
+(
+SELECT AVG(salary)
+FROM Employee
+);
+```
+
+### Practiced
+
+Solved 20 Subquery problems.

@@ -1,0 +1,25 @@
+📖 Day 16 – Advanced Joins
+
+## Topics Covered
+
+- SELF JOIN
+- CROSS JOIN
+- Multiple Table JOINs
+
+### SELF JOIN
+
+Join a table with itself.
+
+### CROSS JOIN
+
+Returns every possible combination of rows.
+
+```sql
+SELECT *
+FROM Students
+CROSS JOIN Courses;
+```
+
+### Practiced
+
+Solved 15–20 JOIN problems.

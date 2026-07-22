@@ -1,0 +1,12 @@
+📖 Day 14 – Mixed SQL Practice
+
+## Practice
+
+Solve at least **30 SQL questions** covering:
+
+- SELECT
+- WHERE
+- GROUP BY
+- HAVING
+- UPDATE
+- DELETE

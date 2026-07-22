@@ -1,0 +1,41 @@
+📖 Day 5 – ORDER BY, LIMIT & NULL
+
+## Topics Covered
+
+- ORDER BY
+- LIMIT
+- NULL
+
+Ascending order
+
+```sql
+ORDER BY salary;
+```
+
+Descending order
+
+```sql
+ORDER BY salary DESC;
+```
+
+Top 5 rows
+
+```sql
+LIMIT 5;
+```
+
+Find NULL values
+
+```sql
+WHERE email IS NULL;
+```
+
+Find NOT NULL values
+
+```sql
+WHERE email IS NOT NULL;
+```
+
+### Practiced
+
+Solved S20 sorting questions.

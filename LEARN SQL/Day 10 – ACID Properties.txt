@@ -1,0 +1,15 @@
+📖 Day 10 – ACID Properties
+
+## Topics Covered
+
+- Atomicity
+- Consistency
+- Isolation
+- Durability
+
+| Property | Meaning |
+|----------|---------|
+| Atomicity | All or Nothing |
+| Consistency | Keeps database valid |
+| Isolation | Transactions work independently |
+| Durability | Saved permanently after commit |

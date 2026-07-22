@@ -1,0 +1,27 @@
+📖 Day 19 – Final Revision & Mock Interview
+
+## Revise
+
+- DDL Commands
+- DML Commands
+- SELECT
+- WHERE
+- LIKE
+- ORDER BY
+- Aggregate Functions
+- GROUP BY
+- HAVING
+- Date Functions
+- Transactions
+- ACID Properties
+- Locking
+- Deadlocks
+- Joins
+- Subqueries
+- CASE
+- UNION
+
+## Practiced
+
+- Solved **50 SQL problems**
+- Completed **2 SQL projects**

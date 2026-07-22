@@ -1,0 +1,13 @@
+📖 Day 12 – Retail Store Project Revision
+
+## Topics Covered
+
+- Table Creation
+- Insert
+- Update
+- Delete
+- Aggregate Queries
+
+### Practiced
+
+Completed the Retail Store SQL Project from start to finish.

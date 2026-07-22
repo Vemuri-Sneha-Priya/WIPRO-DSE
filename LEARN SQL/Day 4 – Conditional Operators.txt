@@ -1,0 +1,63 @@
+📖 Day 4 – Conditional Operators
+
+## Topics Covered
+
+- AND
+- OR
+- BETWEEN
+- IN
+- LIKE
+
+### AND
+
+Both conditions must be true.
+
+```sql
+WHERE salary > 50000
+AND department='IT';
+```
+
+### OR
+
+At least one condition should be true.
+
+```sql
+WHERE department='IT'
+OR department='HR';
+```
+
+### BETWEEN
+
+```sql
+WHERE age BETWEEN 20 AND 25;
+```
+
+### IN
+
+```sql
+WHERE department IN ('IT','HR');
+```
+
+### LIKE
+
+Starts with A
+
+```sql
+WHERE name LIKE 'A%';
+```
+
+Ends with a
+
+```sql
+WHERE name LIKE '%a';
+```
+
+Contains "ab"
+
+```sql
+WHERE name LIKE '%ab%';
+```
+
+### Practiced
+
+Solved 20 LIKE operator questions.

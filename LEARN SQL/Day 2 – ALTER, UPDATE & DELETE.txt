@@ -1,0 +1,44 @@
+📖 Day 2 – ALTER, UPDATE & DELETE
+
+## Topics Covered
+
+- ALTER TABLE
+- UPDATE
+- DELETE
+
+## ALTER TABLE
+
+Used to change the table structure.
+
+```sql
+ALTER TABLE Student
+ADD email VARCHAR(50);
+```
+
+## UPDATE
+
+Used to modify existing records.
+
+```sql
+UPDATE Student
+SET age = 21
+WHERE id = 1;
+```
+
+ **Note:** Without the `WHERE` clause, every row will be updated.
+
+## DELETE
+
+Used to remove records.
+
+```sql
+DELETE FROM Student
+WHERE id = 2;
+```
+
+### Practiced
+
+- Added a new column.
+- Renamed a column.
+- Updated multiple records.
+- Deleted a single record.

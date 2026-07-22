@@ -1,0 +1,46 @@
+📖 Day 3 – SELECT Queries
+
+## Topics Covered
+
+- SELECT
+- DISTINCT
+- WHERE
+
+## SELECT
+
+Retrieve all columns.
+
+```sql
+SELECT *
+FROM Student;
+```
+
+Retrieve specific columns.
+
+```sql
+SELECT name, age
+FROM Student;
+```
+
+## WHERE
+
+Filters rows.
+
+```sql
+SELECT *
+FROM Student
+WHERE age > 20;
+```
+
+## DISTINCT
+
+Removes duplicate values.
+
+```sql
+SELECT DISTINCT department
+FROM Employee;
+```
+
+### Practiced
+
+Solved 20 filtering questions.

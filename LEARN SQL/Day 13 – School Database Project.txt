@@ -1,0 +1,10 @@
+📖 Day 13 – School Database Project Revision
+
+## Topics Covered
+
+- Employee Queries
+- Student Queries
+- Salary Analysis
+- Updates
+- Rollback
+

@@ -1,0 +1,25 @@
+📖 Day 9 – Transactions
+
+## Topics Covered
+
+- BEGIN
+- COMMIT
+- ROLLBACK
+
+Transaction Example
+
+```sql
+BEGIN;
+
+UPDATE Employee
+SET salary=60000
+WHERE id=1;
+
+ROLLBACK;
+```
+
+### Explanation
+
+- BEGIN → Starts transaction.
+- COMMIT → Saves changes.
+- ROLLBACK → Cancels changes.

@@ -1,0 +1,22 @@
+📖 Day 15 – SQL Joins
+
+## Topics Covered
+
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL JOIN
+
+Example
+
+```sql
+SELECT e.name,
+d.department
+FROM Employee e
+INNER JOIN Department d
+ON e.dept_id=d.id;
+```
+
+### Practiced
+
+Solved 20 JOIN questions.

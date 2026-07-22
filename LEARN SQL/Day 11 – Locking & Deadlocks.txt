@@ -1,0 +1,23 @@
+📖 Day 11 – Locking & Deadlocks
+
+## Topics Covered
+
+- Shared Lock
+- Exclusive Lock
+- Deadlock
+
+### Shared Lock
+
+Multiple users can read data simultaneously.
+
+### Exclusive Lock
+
+Only one user can modify the data.
+
+### Deadlock
+
+Occurs when two transactions wait for each other indefinitely.
+
+### Practiced
+
+Studied examples and solve theory questions.

@@ -1,0 +1,41 @@
+📖 Day 8 – Date Functions
+
+## Topics Covered
+
+- CURRENT_DATE
+- CURRENT_TIMESTAMP
+- DATE()
+- STRFTIME()
+- JULIANDAY()
+
+### Example
+
+Current Date
+
+```sql
+SELECT CURRENT_DATE;
+```
+
+Current Timestamp
+
+```sql
+SELECT CURRENT_TIMESTAMP;
+```
+
+Extract Year
+
+```sql
+SELECT STRFTIME('%Y',order_date)
+FROM Orders;
+```
+
+Difference between dates
+
+```sql
+SELECT JULIANDAY('2026-07-20')-
+JULIANDAY('2026-07-10');
+```
+
+### Practiced
+
+Solved 15 date function problems.

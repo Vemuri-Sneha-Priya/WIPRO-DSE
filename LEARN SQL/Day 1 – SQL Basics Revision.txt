@@ -1,0 +1,75 @@
+📖 Day 1 – SQL Basics Revision
+
+## Topics Covered
+- Database
+- Table
+- Row
+- Column
+- Data Types
+- CREATE TABLE
+- INSERT
+- PRIMARY KEY
+- Constraints
+
+## Brief Explanation
+
+A **Database** stores multiple tables.
+
+A **Table** stores related information.
+
+Example:
+
+| ID | Name | Age |
+|----|------|-----|
+|1   |Sneha |20   |
+
+- **Row** → One complete record.
+- **Column** → One attribute of the record.
+
+### Data Types
+
+| Data Type   |     Purpose     |
+|-------------|-----------------|
+| INT         | Integer values  |
+| VARCHAR(n)  | Text values     |
+| DATE        | Date values     |
+| DECIMAL(5,2)| Decimal numbers |
+
+### Example
+
+sql
+
+CREATE TABLE Student(
+    id INT,
+    name VARCHAR(50),
+    age INT
+);
+
+
+### Insert Data
+
+sql
+
+INSERT INTO Student
+VALUES (1,'Bhavya',20);
+
+
+### Constraints
+
+| Constraint  |         Description          |
+|-------------|------------------------------|
+| PRIMARY KEY | Unique and Not Null          |
+| NOT NULL    | Cannot contain NULL          |
+| UNIQUE      | Duplicate values not allowed |
+| DEFAULT     | Assigns default value        |
+
+Example
+
+```sql
+id INT PRIMARY KEY
+```
+
+### Practiced
+
+- Created 5 different tables.
+- Inserted at least 5 records into each table.

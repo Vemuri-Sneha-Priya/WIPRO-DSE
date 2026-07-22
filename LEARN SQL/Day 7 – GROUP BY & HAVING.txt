@@ -1,0 +1,35 @@
+ 📖 Day 7 – GROUP BY & HAVING
+
+## Topics Covered
+
+- GROUP BY
+- HAVING
+
+GROUP BY groups rows before applying aggregate functions.
+
+```sql
+SELECT department,
+AVG(salary)
+FROM Employee
+GROUP BY department;
+```
+
+HAVING filters groups.
+
+```sql
+SELECT department,
+AVG(salary)
+FROM Employee
+GROUP BY department
+HAVING AVG(salary)>50000;
+```
+
+### Difference
+
+| WHERE | HAVING |
+|--------|---------|
+| Filters rows | Filters groups |
+
+### Practiced
+
+Solved 20 GROUP BY questions.
