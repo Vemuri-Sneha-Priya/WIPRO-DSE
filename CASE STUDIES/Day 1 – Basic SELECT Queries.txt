@@ -1,0 +1,42 @@
+📅 Day 1 – Basic SELECT Queries
+
+## Topics Covered
+
+- SELECT
+- FROM
+- DISTINCT
+- Selecting specific columns
+
+## Brief Explanation
+
+The `SELECT` statement retrieves data from a table.
+
+### Examples
+
+Retrieve all columns:
+
+```sql
+SELECT *
+FROM Employees;
+```
+
+Retrieve selected columns:
+
+```sql
+SELECT name, salary
+FROM Employees;
+```
+
+Remove duplicate values:
+
+```sql
+SELECT DISTINCT department
+FROM Employees;
+```
+
+### Practiced Problems
+
+- All Products
+- Distinct Companies
+- Department of Each Employee
+- Player Details

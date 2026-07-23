@@ -1,0 +1,49 @@
+📅 Day 3 – Pattern Matching & NULL
+
+## Topics Covered
+
+- LIKE
+- Wildcards (`%`, `_`)
+- IS NULL
+- IS NOT NULL
+
+## Brief Explanation
+
+`LIKE` is used for searching patterns.
+
+### Examples
+
+Starts with A
+
+```sql
+WHERE name LIKE 'A%';
+```
+
+Ends with a
+
+```sql
+WHERE name LIKE '%a';
+```
+
+Contains "an"
+
+```sql
+WHERE name LIKE '%an%';
+```
+
+NULL values
+
+```sql
+WHERE phone IS NULL;
+```
+
+NOT NULL
+
+```sql
+WHERE phone IS NOT NULL;
+```
+
+### Practiced Problems
+
+- Handling NULL Values
+- Article Views

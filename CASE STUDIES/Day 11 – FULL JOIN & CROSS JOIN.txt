@@ -1,0 +1,23 @@
+📅 Day 11 – FULL JOIN & CROSS JOIN
+
+## Topics Covered
+
+- FULL JOIN
+- CROSS JOIN
+
+## Brief Explanation
+
+CROSS JOIN returns every possible combination of rows.
+
+### Example
+
+```sql
+SELECT *
+FROM City
+CROSS JOIN Driver;
+```
+
+### Practiced Problems
+
+- Cross Join City
+- Cross Join Market

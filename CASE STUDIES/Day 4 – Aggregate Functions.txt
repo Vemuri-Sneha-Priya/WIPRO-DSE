@@ -1,0 +1,56 @@
+📅 Day 4 – Aggregate Functions
+
+## Topics Covered
+
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+
+## Brief Explanation
+
+Aggregate functions perform calculations on multiple rows.
+
+### Examples
+
+Count
+
+```sql
+SELECT COUNT(*)
+FROM Employees;
+```
+
+Average
+
+```sql
+SELECT AVG(salary)
+FROM Employees;
+```
+
+Maximum
+
+```sql
+SELECT MAX(salary)
+FROM Employees;
+```
+
+Minimum
+
+```sql
+SELECT MIN(salary)
+FROM Employees;
+```
+
+Sum
+
+```sql
+SELECT SUM(salary)
+FROM Employees;
+```
+
+### Practiced Problems
+
+- Average Salary
+- Fiction Collection Size
+- Player Performance Insights

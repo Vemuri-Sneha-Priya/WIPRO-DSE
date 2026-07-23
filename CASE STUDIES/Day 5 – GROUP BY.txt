@@ -1,0 +1,23 @@
+ 📅 Day 5 – GROUP BY
+
+## Topics Covered
+
+- GROUP BY
+
+## Brief Explanation
+
+Groups records before applying aggregate functions.
+
+### Example
+
+```sql
+SELECT department,
+COUNT(*)
+FROM Employees
+GROUP BY department;
+```
+
+### Practiced Problems
+
+- Count of Users in Each Team
+- Group Users

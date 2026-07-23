@@ -1,0 +1,13 @@
+📅 Day 8 – SQL Query Reading
+
+## Topics Covered
+
+- Reading SQL Queries
+- Predicting Query Output
+- Finding Syntax Errors
+
+### Practiced Problems
+
+- Output of SQL Query
+- Find Incorrect Queries
+- Find Output

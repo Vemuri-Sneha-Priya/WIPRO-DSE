@@ -1,0 +1,26 @@
+ 📅 Day 7 – ORDER BY
+
+## Topics Covered
+
+- ORDER BY ASC
+- ORDER BY DESC
+- Multiple Column Sorting
+
+### Examples
+
+Descending order
+
+```sql
+ORDER BY salary DESC;
+```
+
+Multiple sorting
+
+```sql
+ORDER BY department,
+salary DESC;
+```
+
+### Practiced Problems
+
+- Ordered List of Students

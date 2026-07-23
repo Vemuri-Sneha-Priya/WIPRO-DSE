@@ -1,0 +1,23 @@
+📅 Day 14 – Single Row Subqueries
+
+## Topics Covered
+
+- MAX()
+- MIN()
+- AVG()
+
+### Example
+
+```sql
+SELECT *
+FROM Properties
+WHERE rating =
+(
+SELECT MAX(rating)
+FROM Properties
+);
+```
+
+### Practiced Problems
+
+- Above Average Rating

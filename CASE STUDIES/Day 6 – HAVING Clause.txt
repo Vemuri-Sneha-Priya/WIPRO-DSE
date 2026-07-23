@@ -1,0 +1,26 @@
+📅 Day 6 – HAVING Clause
+
+## Topics Covered
+
+- HAVING
+
+## Brief Explanation
+
+`WHERE` filters rows before grouping.
+
+`HAVING` filters groups after aggregation.
+
+### Example
+
+```sql
+SELECT department,
+AVG(salary)
+FROM Employees
+GROUP BY department
+HAVING AVG(salary) > 50000;
+```
+
+### Practiced Problems
+
+- Find Team with Highest Average Rating
+- User with Highest Rating in Each College

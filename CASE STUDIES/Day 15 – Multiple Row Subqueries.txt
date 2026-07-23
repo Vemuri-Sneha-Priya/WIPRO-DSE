@@ -1,0 +1,23 @@
+📅 Day 15 – Multiple Row Subqueries
+
+## Topics Covered
+
+- IN
+- ANY
+- ALL
+
+### Example
+
+```sql
+SELECT *
+FROM Users
+WHERE city IN
+(
+SELECT city
+FROM Properties
+);
+```
+
+### Practiced Problems
+
+- Property Amenities

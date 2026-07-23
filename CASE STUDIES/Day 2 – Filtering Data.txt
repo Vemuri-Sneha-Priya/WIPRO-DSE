@@ -1,0 +1,53 @@
+📅 Day 2 – Filtering Data
+
+## Topics Covered
+
+- WHERE
+- Comparison Operators
+- AND
+- OR
+- IN
+- BETWEEN
+
+## Brief Explanation
+
+The `WHERE` clause filters records based on conditions.
+
+### Examples
+
+```sql
+SELECT *
+FROM Employees
+WHERE salary > 50000;
+```
+
+Using AND
+
+```sql
+SELECT *
+FROM Employees
+WHERE salary > 50000
+AND department='IT';
+```
+
+Using BETWEEN
+
+```sql
+SELECT *
+FROM Employees
+WHERE salary BETWEEN 40000 AND 70000;
+```
+
+Using IN
+
+```sql
+SELECT *
+FROM Employees
+WHERE department IN ('IT','HR');
+```
+
+### Practiced Problems
+
+- High Price of Products
+- Locate People
+- Salary of Employees

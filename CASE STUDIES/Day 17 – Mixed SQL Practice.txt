@@ -1,0 +1,14 @@
+📅 Day 17 – Mixed SQL Practice
+
+## Topics Covered
+
+- SELECT
+- WHERE
+- GROUP BY
+- HAVING
+- JOIN
+- Subqueries
+
+### Practised
+
+Solved  **20–25 mixed SQL questions**.

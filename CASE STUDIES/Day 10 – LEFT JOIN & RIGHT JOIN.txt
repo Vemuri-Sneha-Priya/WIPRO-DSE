@@ -1,0 +1,24 @@
+📅 Day 10 – LEFT JOIN & RIGHT JOIN
+
+## Topics Covered
+
+- LEFT JOIN
+- RIGHT JOIN
+
+## Brief Explanation
+
+LEFT JOIN returns all rows from the left table and matching rows from the right table.
+
+### Example
+
+```sql
+SELECT *
+FROM A
+LEFT JOIN B
+ON A.id = B.id;
+```
+
+### Practiced Problems
+
+- Left Join MCQ
+- Complaint-Free Users

@@ -1,0 +1,23 @@
+📅 Day 19 – Final SQL 
+
+
+
+- SELECT
+- WHERE
+- LIKE
+- NULL
+- Aggregate Functions
+- GROUP BY
+- HAVING
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL JOIN
+- CROSS JOIN
+- Subqueries
+- Correlated Subqueries
+
+## Practised
+
+- Solved **30–40 SQL questions**
+- Revised incorrect solutions

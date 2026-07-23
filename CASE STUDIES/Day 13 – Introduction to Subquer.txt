@@ -1,0 +1,25 @@
+ 📅 Day 13 – Introduction to Subqueries
+
+## Topics Covered
+
+- Subqueries
+
+## Brief Explanation
+
+A subquery is a query inside another query.
+
+### Example
+
+```sql
+SELECT *
+FROM Employees
+WHERE salary >
+(
+SELECT AVG(salary)
+FROM Employees
+);
+```
+
+### Practiced Problems
+
+- Subquery MCQs
