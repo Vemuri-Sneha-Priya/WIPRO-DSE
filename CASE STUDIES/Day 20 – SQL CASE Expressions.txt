@@ -1,0 +1,269 @@
+# Day 20 – SQL CASE Expressions
+
+## Objective
+Learn how to use the `CASE` expression to perform conditional logic in SQL queries.
+
+---
+
+# Topics Covered
+
+## 1. CASE WHEN
+
+### Definition
+The `CASE` expression works like an **if-else statement** in programming. It returns different values based on specified conditions.
+
+### Syntax
+
+```sql
+SELECT
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result3
+END
+FROM table_name;
+```
+
+### Example
+
+```sql
+SELECT emp_name,
+CASE
+    WHEN salary >= 50000 THEN 'High'
+    ELSE 'Low'
+END AS salary_level
+FROM Employee;
+```
+
+---
+
+## 2. ELSE Clause
+
+### Purpose
+The `ELSE` clause specifies a default value when none of the `WHEN` conditions are true.
+
+Without `ELSE`, SQL returns **NULL**.
+
+### Example
+
+```sql
+SELECT
+CASE
+    WHEN marks >= 90 THEN 'A'
+    ELSE 'Not A'
+END AS Grade
+FROM Student;
+```
+
+---
+
+## 3. Multiple Conditions
+
+SQL evaluates conditions **from top to bottom** and stops when the first condition is true.
+
+### Example
+
+```sql
+SELECT
+CASE
+    WHEN marks >= 90 THEN 'A'
+    WHEN marks >= 75 THEN 'B'
+    WHEN marks >= 50 THEN 'C'
+    ELSE 'Fail'
+END AS Grade
+FROM Student;
+```
+
+---
+
+## 4. CASE in SELECT
+
+Used to create a new calculated column.
+
+```sql
+SELECT
+book_name,
+CASE
+    WHEN copies_available > 10 THEN 'Available'
+    ELSE 'Limited'
+END AS Status
+FROM Books;
+```
+
+---
+
+## 5. CASE with Aggregate Functions
+
+Used to count or sum values conditionally.
+
+```sql
+SELECT
+SUM(
+CASE
+    WHEN salary > 50000 THEN 1
+    ELSE 0
+END
+) AS HighSalaryEmployees
+FROM Employee;
+```
+
+---
+
+## 6. CASE in ORDER BY
+
+Used to customize sorting.
+
+```sql
+SELECT emp_name, department
+FROM Employee
+ORDER BY
+CASE
+    WHEN department = 'IT' THEN 1
+    WHEN department = 'HR' THEN 2
+    ELSE 3
+END;
+```
+
+---
+
+## 7. CASE with GROUP BY
+
+```sql
+SELECT
+CASE
+    WHEN salary >= 50000 THEN 'High'
+    ELSE 'Low'
+END AS Category,
+COUNT(*) AS TotalEmployees
+FROM Employee
+GROUP BY
+CASE
+    WHEN salary >= 50000 THEN 'High'
+    ELSE 'Low'
+END;
+```
+
+---
+
+## 8. Library Management Case Study
+
+```sql
+SELECT
+book_name,
+CASE
+    WHEN copies_available = 0 THEN 'Out of Stock'
+    WHEN copies_available <= 5 THEN 'Limited'
+    ELSE 'Available'
+END AS Status
+FROM Books;
+```
+
+---
+
+# Key Points
+
+- `CASE` works like an if-else statement.
+- `WHEN` specifies a condition.
+- `THEN` returns a value if the condition is true.
+- `ELSE` provides a default value.
+- `END` closes the CASE expression.
+- Conditions are checked from top to bottom.
+- SQL stops checking after the first matching condition.
+- CASE can be used in:
+  - SELECT
+  - WHERE
+  - ORDER BY
+  - GROUP BY
+  - HAVING
+  - Aggregate functions
+
+---
+
+# Interview Questions
+
+1. What is the purpose of CASE in SQL?
+2. What happens if ELSE is omitted?
+3. Can CASE contain multiple WHEN conditions?
+4. Where can CASE be used in SQL?
+5. What is the difference between CASE and IF?
+6. Does SQL evaluate every WHEN condition?
+7. How do you count rows using CASE?
+8. Can CASE be used with GROUP BY?
+
+---
+
+# Practice Queries
+
+## 1. Employee Salary Category
+
+```sql
+SELECT emp_name,
+CASE
+    WHEN salary >= 60000 THEN 'High'
+    WHEN salary >= 40000 THEN 'Medium'
+    ELSE 'Low'
+END AS Salary_Category
+FROM Employee;
+```
+
+---
+
+## 2. Student Grade
+
+```sql
+SELECT student_name,
+CASE
+    WHEN marks >= 90 THEN 'A'
+    WHEN marks >= 75 THEN 'B'
+    WHEN marks >= 50 THEN 'C'
+    ELSE 'Fail'
+END AS Grade
+FROM Student;
+```
+
+---
+
+## 3. Book Availability
+
+```sql
+SELECT book_name,
+CASE
+    WHEN copies_available > 5 THEN 'Available'
+    ELSE 'Limited'
+END AS Status
+FROM Books;
+```
+
+---
+
+## 4. Count High Salary Employees
+
+```sql
+SELECT
+SUM(
+CASE
+    WHEN salary > 50000 THEN 1
+    ELSE 0
+END
+) AS Total
+FROM Employee;
+```
+
+---
+
+# Summary
+
+✔ Learned SQL CASE expressions
+
+✔ Used ELSE for default values
+
+✔ Applied multiple WHEN conditions
+
+✔ Used CASE in SELECT, ORDER BY, GROUP BY
+
+✔ Combined CASE with aggregate functions
+
+✔ Practiced real-world Library Management queries
+
+---
+
